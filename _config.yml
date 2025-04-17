@@ -17,6 +17,11 @@ remote_theme: "jekyll/minima@1e8a445"
 #  - jekyll-feed
 #  - jekyll-seo-tag
 
+#Added plots folder (with underscore prefix) to the collection of files to be processed by Jekyll.
+collections:
+  plots:
+    output: true #Required to generate resultant page in accordance with front matter.
+
 # Minima specific settings, which are only available from Minima 3.0 onward.
 minima:
   # Minima skin selection.

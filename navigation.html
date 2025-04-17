@@ -1,0 +1,13 @@
+---
+layout: page
+title: Engagements
+---
+
+<!-- Comment in html. The below is written in liquid as per Jekyll documentation on navigation (c.f.
+https://jekyllrb.com/tutorials/navigation/#scenario-8-retrieving-items-based-on-front-matter-properties )hence it will be rendered just as markdown would -->
+<h3>Interviews</h3>
+<ul> <!-- This is an unordered list -->
+    {% for plot in site.plots %} <!-- This commences a for loop in Liquid template-->
+      <li><a href="{{ site.url }}{{ site.baseurl }}{{ plot.url }}">{{ plot.title }}</a></li> 
+    {% endfor %}
+</ul>
